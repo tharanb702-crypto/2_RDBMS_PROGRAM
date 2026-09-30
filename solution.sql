@@ -1,1 +1,10 @@
-
+CREATE DATABASE BARANI_DB;
+USE BARANI_DB;
+CREATE TABLE Student (
+    StudentID NUMBER(5) PRIMARY KEY,
+    StudentName VARCHAR2(20) NOT NULL,
+    DOB DATE,
+    Gender VARCHAR2(10) CHECK (Gender IN ('Male', 'Female', 'Other')),
+    DepartmentID NUMBER(5) NOT NULL
+);
+SELECT*FROM BARANI_DB;
